@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tetris (HTML5)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <h1>Tetris</h1>
+      <div class="meta">
+        <div><span class="label">Score</span> <span id="score">0</span></div>
+        <div><span class="label">Lines</span> <span id="lines">0</span></div>
+        <div><span class="label">Level</span> <span id="level">1</span></div>
+      </div>
+    </header>
+
+    <section class="board-area">
+      <canvas id="board" width="300" height="600" aria-label="Tetris board"></canvas>
+
+      <aside class="side">
+        <div class="panel">
+          <h2>Next</h2>
+          <canvas id="next" width="120" height="120" aria-label="Next piece"></canvas>
+        </div>
+
+        <div class="panel">
+          <h2>Hold</h2>
+          <canvas id="hold" width="120" height="120" aria-label="Held piece"></canvas>
+          <p class="hint">Press <kbd>C</kbd></p>
+        </div>
+
+        <div class="panel">
+          <h2>Controls</h2>
+          <ul>
+            <li><kbd>←</kbd>/<kbd>→</kbd> move</li>
+            <li><kbd>↓</kbd> soft drop</li>
+            <li><kbd>Space</kbd> hard drop</li>
+            <li><kbd>Z</kbd> / <kbd>X</kbd> rotate</li>
+            <li><kbd>C</kbd> hold</li>
+            <li><kbd>P</kbd> pause</li>
+            <li><kbd>R</kbd> restart</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <button id="btnStart" type="button">Start</button>
+          <button id="btnPause" type="button">Pause</button>
+          <button id="btnRestart" type="button">Restart</button>
+        </div>
+
+        <p class="footer">Made with plain HTML/CSS/JS. No dependencies.</p>
+      </aside>
+    </section>
+  </main>
+
+  <script src="tetris.js"></script>
+</body>
+</html>
