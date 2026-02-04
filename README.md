@@ -2,6 +2,10 @@
 
 A dependency-free Tetris clone in plain HTML/CSS/JS.
 
+## Play online
+
+GitHub Pages: https://timclawdbot-rgb.github.io/tetris-html/
+
 ## Run locally
 
 Just open `index.html` in a browser.
